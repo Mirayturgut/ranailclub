@@ -1,7 +1,7 @@
 // dashboard/user.js
 (() => {
   // ---- SETTINGS ----
-  const CARD_COMMISSION_RATE = 0.20; // %20
+  const CARD_COMMISSION_MULTIPLIER = 1.20; // 1,20 (yani %20 dahil brüt)
   const EMPLOYEE_RATE = 0.40;        // %40
 
   // ---- Elements ----
@@ -73,10 +73,12 @@
     let commission = 0;
     let base = a;
 
-    if (type === "Kart") {
-      commission = a * CARD_COMMISSION_RATE;
-      base = a - commission;
-    }
+   if (type === "Kart") {
+  // Brüt (a) = Net (base) * 1.20  =>  Net = Brüt / 1.20
+  base = a / CARD_COMMISSION_MULTIPLIER;
+  commission = a - base; // aradaki fark: 1200 - 1000 = 200
+}
+
 
     const employee = base * EMPLOYEE_RATE;
     const business = base - employee;
