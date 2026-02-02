@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<!-- [Head] start -->
+<head>
+<title>RA Nail Club Yönetim Paneli </title>
+<!-- [Meta] -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="Mantis is made using Bootstrap 5 design framework. Download the free admin template &amp; use it for your project." name="description"/>
+<meta content="Mantis, Dashboard UI Kit, Bootstrap 5, Admin Template, Admin Dashboard, CRM, CMS, Bootstrap Admin Template" name="keywords"/>
+<meta content="CodedThemes" name="author"/>
+<!-- [Favicon] icon -->
+<link href="../ra-favicon.png" rel="icon" type="image/x-icon"/> <!-- [Google Font] Family -->
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" id="main-font-link" rel="stylesheet"/>
+<!-- [Tabler Icons] https://tablericons.com -->
+<link href="../assets/fonts/tabler-icons.min.css" rel="stylesheet"/>
+<!-- [Feather Icons] https://feathericons.com -->
+<link href="../assets/fonts/feather.css" rel="stylesheet"/>
+<!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+<link href="../assets/fonts/fontawesome.css" rel="stylesheet"/>
+<!-- [Material Icons] https://fonts.google.com/icons -->
+<link href="../assets/fonts/material.css" rel="stylesheet"/>
+<!-- [Template CSS Files] -->
+<link href="../assets/css/style.css" id="main-style-link" rel="stylesheet"/>
+<link href="../assets/css/style-preset.css" rel="stylesheet"/>
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+<body data-pc-direction="ltr" data-pc-preset="preset-1" data-pc-theme="light">
+<!-- [ Pre-loader ] start -->
+<div class="loader-bg">
+<div class="loader-track">
+<div class="loader-fill"></div>
+</div>
+</div>
+<!-- [ Pre-loader ] End -->
+<!-- [ Sidebar Menu ] start -->
+<nav class="pc-sidebar">
+<div class="navbar-wrapper">
+<div class="m-header">
+<a class="b-brand text-primary" href="../dashboard/index.html">
+        <!-- ========   Change your logo from here   ============ -->
+        <img src="../ra-logo.png" class="logo" alt="logo">
+      </a>
+    </div>
+    <div class="navbar-content">
+      <ul class="pc-navbar">
+<style>
+  .logo {
+    margin-top: 40px;
+    width: 80px;
+    height: auto;
+  }
+</style>
+  <li class="pc-item pc-caption">
+    <label>RA Nail Club Yönetim Paneli </label>
+  </li>
+
+<li class="pc-item">
+<a class="pc-link" href="../dashboard/index.html">
+<span class="pc-micon"><i class="ti ti-dashboard"></i></span>
+<span class="pc-mtext">Dashboard</span>
+</a>
+</li>
+<li class="pc-item">
+<a class="pc-link" href="admin-income.html">
+<span class="pc-micon"><i class="ti ti-cash"></i></span>
+<span class="pc-mtext">Gelir Listesi</span>
+</a>
+</li>
+<li class="pc-item">
+<a class="pc-link" href="admin-expenses.html">
+<span class="pc-micon"><i class="ti ti-receipt"></i></span>
+<span class="pc-mtext">Gider Listesi</span>
+</a>
+</li>
+<li class="pc-item active">
+<a class="pc-link" href="admin-logs.html">
+<span class="pc-micon"><i class="ti ti-activity"></i></span>
+<span class="pc-mtext">User Hareketleri</span>
+</a>
+</li>
+<li class="pc-item pc-caption">
+<label>Yönetim Araçları</label>
+</li>
+<li class="pc-item">
+<a class="pc-link" href="admin-users.html">
+<span class="pc-micon"><i class="ti ti-users"></i></span>
+<span class="pc-mtext">Kullanıcılar</span>
+</a>
+</li>
+<li class="pc-item">
+<a class="pc-link" href="#" id="logoutBtn">
+<span class="pc-micon"><i class="ti ti-power"></i></span>
+<span class="pc-mtext">Çıkış</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- [ Sidebar Menu ] end --> <!-- [ Header Topbar ] start -->
+<header class="pc-header">
+  <div class="header-wrapper"> <!-- [Mobile Media Block] start -->
+<div class="me-auto pc-mob-drp">
+  <ul class="list-unstyled">
+    <li class="pc-h-item pc-sidebar-collapse">
+      <a href="#" class="pc-head-link ms-0" id="sidebar-hide">
+        <i class="ti ti-menu-2"></i>
+      </a>
+    </li>
+    <li class="pc-h-item pc-sidebar-popup">
+      <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
+        <i class="ti ti-menu-2"></i>
+      </a>
+    </li>
+    <!-- <li class="dropdown pc-h-item d-inline-flex d-md-none">
+      <a
+        class="pc-head-link dropdown-toggle arrow-none m-0"
+        data-bs-toggle="dropdown"
+        href="#"
+        role="button"
+        aria-haspopup="false"
+        aria-expanded="false"
+      >
+        <i class="ti ti-search"></i>
+      </a>
+      <div class="dropdown-menu pc-h-dropdown drp-search">
+        <form class="px-3">
+          <div class="form-group mb-0 d-flex align-items-center">
+            <i data-feather="search"></i>
+            <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
+          </div>
+        </form>
+      </div>
+    </li>
+    <li class="pc-h-item d-none d-md-inline-flex">
+      <form class="header-search">
+        <i data-feather="search" class="icon-search"></i>
+        <input type="search" class="form-control" placeholder="Search here. . .">
+      </form>
+    </li> -->
+  </ul>
+</div>
+<!-- [Mobile Media Block end] -->
+<div class="ms-auto d-flex align-items-center gap-2">
+
+  <span class="badge bg-light-secondary border">
+    <i class="ti ti-calendar-event me-1"></i>
+    <span id="headerDate"></span>
+  </span>
+
+  <span class="badge bg-light-primary border">
+    <i class="ti ti-building-store me-1"></i>
+    RA Nail Club
+  </span>
+
+  <a href="../pages/login.html" class="btn btn-sm btn-outline-danger" id="logoutBtnHeader">
+    <i class="ti ti-power"></i>
+  </a>
+
+</div>
+ </div>
+</header>
+<!-- [ Header ] end -->
+<script>
+  (function(){
+    const el = document.getElementById("headerDate");
+    if(!el) return;
+    const d = new Date();
+    el.textContent = d.toLocaleDateString("tr-TR");
+  })();
+</script>
+<!-- [ Header ] end -->
+<!-- [ Main Content ] start -->
+<div class="pc-container">
+<div class="pc-content">
+<div class="page-header">
+<div class="page-block">
+<div class="row align-items-center">
+<div class="col-md-12">
+<div class="page-header-title">
+<h5 class="m-b-10">User Hareketleri</h5>
+</div>
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+<li aria-current="page" class="breadcrumb-item">User Hareketleri</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<div class="row g-3 align-items-end">
+<div class="col-md-3">
+<label class="form-label">Kullanıcı</label>
+<select class="form-select" id="logUser"><option value="">Tümü</option></select>
+</div>
+<div class="col-md-3">
+<label class="form-label">İşlem</label>
+<select class="form-select" id="logEvent"><option value="">Tümü</option></select>
+</div>
+<div class="col-md-3"><label class="form-label">Tür</label><select class="form-select" id="logType"><option value="">Tümü</option></select></div><div class="col-md-3">
+<label class="form-label">Tarih</label>
+<input class="form-control" id="logMonth" type="month"/>
+</div>
+</div>
+</div>
+</div>
+<div class="card tbl-card">
+<div class="card-body">
+<div class="table-responsive">
+<table class="table table-hover table-borderless mb-0">
+<thead>
+<tr><th>TARİH</th><th>KULLANICI</th><th>TÜR</th><th>FİYAT</th><th>YAPILAN İŞLEM</th></tr>
+</thead>
+<tbody id="logsTbody">
+<tr>
+<td class="text-muted">2026-01-28 14:05</td>
+<td>Ayşe</td>
+<td><span class="badge bg-light-success border border-success">İşlem Ekleme</span></td>
+<td>Kart - 1200 ₺</td>
+</tr>
+<tr>
+<td class="text-muted">2026-01-28 10:12</td>
+<td>Mehmet</td>
+<td><span class="badge bg-light-primary border border-primary">Giriş</span></td>
+<td>Başarılı giriş</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- [ Main Content ] end -->
+<footer class="pc-footer">
+<div class="footer-wrapper container-fluid">
+<div class="row">
+<div class="col-sm my-1">
+<p class="m-0">
+    © 2026 <strong>Panel Sistemi</strong> — Tüm hakları saklıdır.
+  </p>
+</div>
+<div class="col-sm my-1 text-sm-end">
+  <a href="https://mirayturgut.com.tr/"> <p class="m-0 text-muted">
+    Geliştirici: <strong>Miray Turgut</strong>
+  </p></a>
+</div>
+<div class="col-auto my-1">
+<ul class="list-inline footer-link mb-0">
+<li class="list-inline-item"><a href="../index.html">Çıkış</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<!-- [Page Specific JS] start -->
+<script src="../assets/js/plugins/apexcharts.min.js"></script>
+<script src="../assets/js/pages/dashboard-default.js"></script>
+<!-- [Page Specific JS] end -->
+<!-- Required Js -->
+<script src="../assets/js/plugins/popper.min.js"></script>
+<script src="../assets/js/plugins/simplebar.min.js"></script>
+<script src="../assets/js/plugins/bootstrap.min.js"></script>
+<script src="../assets/js/fonts/custom-font.js"></script>
+<script src="../assets/js/pcoded.js"></script>
+<script src="../assets/js/plugins/feather.min.js"></script>
+<script>layout_change('light');</script>
+<script>change_box_container('false');</script>
+<script>layout_rtl_change('false');</script>
+<script>preset_change("preset-1");</script>
+<script>font_change("Public-Sans");</script>
+<script src="../dashboard/shared-storage.js"></script>
+<script src="../dashboard/admin-logs.js"></script>
+
+    <script src="../dashboard/auth-guard.js"></script>
+
+</body>
+<!-- [Body] end -->
+</html>

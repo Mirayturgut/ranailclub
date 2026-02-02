@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="tr">
+<!-- [Head] start -->
+
+<head>
+  <title>RA Nail Club Yönetim Paneli </title>
+  <!-- [Meta] -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Mantis is made using Bootstrap 5 design framework. Download the free admin template & use it for your project.">
+  <meta name="keywords" content="Mantis, Dashboard UI Kit, Bootstrap 5, Admin Template, Admin Dashboard, CRM, CMS, Bootstrap Admin Template">
+  <meta name="author" content="CodedThemes">
+
+  <!-- [Favicon] icon -->
+  <link rel="icon" href="../ra-favicon.png" type="image/x-icon"> <!-- [Google Font] Family -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" id="main-font-link">
+<!-- [Tabler Icons] https://tablericons.com -->
+<link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css" >
+<!-- [Feather Icons] https://feathericons.com -->
+<link rel="stylesheet" href="../assets/fonts/feather.css" >
+<!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+<link rel="stylesheet" href="../assets/fonts/fontawesome.css" >
+<!-- [Material Icons] https://fonts.google.com/icons -->
+<link rel="stylesheet" href="../assets/fonts/material.css" >
+<!-- [Template CSS Files] -->
+<link rel="stylesheet" href="../assets/css/style.css" id="main-style-link" >
+<link rel="stylesheet" href="../assets/css/style-preset.css" >
+
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body data-pc-preset="preset-1" data-pc-direction="ltr" data-pc-theme="light">
+  <!-- [ Pre-loader ] start -->
+<div class="loader-bg">
+  <div class="loader-track">
+    <div class="loader-fill"></div>
+  </div>
+</div>
+<!-- [ Pre-loader ] End -->
+ <!-- [ Sidebar Menu ] start -->
+<nav class="pc-sidebar">
+  <div class="navbar-wrapper">
+    <div class="m-header">
+      <a href="../dashboard/index.html" class="b-brand text-primary">
+        <!-- ========   Change your logo from here   ============ -->
+        <img src="../ra-logo.png" class="logo" alt="logo">
+      </a>
+    </div>
+    <div class="navbar-content">
+      <ul class="pc-navbar">
+<style>
+  .logo {
+    margin-top: 40px;
+    width: 80px;
+    height: auto;
+  }
+</style>
+  <li class="pc-item pc-caption">
+    <label>RA Nail Club Yönetim Paneli </label>
+  </li>
+
+
+  <li class="pc-item ">
+    <a href="user.html" class="pc-link">
+      <span class="pc-micon"><i class="ti ti-dashboard"></i></span>
+      <span class="pc-mtext">Dashboard</span>
+    </a>
+  </li>
+
+  <li class="pc-item active">
+    <a href="user-transactions.html" class="pc-link">
+      <span class="pc-micon"><i class="ti ti-receipt-2"></i></span>
+      <span class="pc-mtext">İşlemlerim</span>
+    </a>
+  </li>
+
+  <li class="pc-item">
+    <a href="user-monthly.html" class="pc-link">
+      <span class="pc-micon"><i class="ti ti-calendar-stats"></i></span>
+      <span class="pc-mtext">Aylık Özet</span>
+    </a>
+  </li>
+  <li class="pc-item">
+    <a href="user-profile.html" class="pc-link">
+      <span class="pc-micon"><i class="ti ti-user"></i></span>
+      <span class="pc-mtext">Profil</span>
+    </a>
+  </li>
+
+  <li class="pc-item">
+    <a href="#" class="pc-link" id="logoutBtn">
+      <span class="pc-micon"><i class="ti ti-power"></i></span>
+      <span class="pc-mtext">Çıkış</span>
+    </a>
+  </li>
+
+</ul>
+
+    </div>
+  </div>
+</nav>
+<!-- [ Sidebar Menu ] end --> <!-- [ Header Topbar ] start -->
+<header class="pc-header">
+  <div class="header-wrapper"> <!-- [Mobile Media Block] start -->
+<div class="me-auto pc-mob-drp">
+  <ul class="list-unstyled">
+    <li class="pc-h-item pc-sidebar-collapse">
+      <a href="#" class="pc-head-link ms-0" id="sidebar-hide">
+        <i class="ti ti-menu-2"></i>
+      </a>
+    </li>
+    <li class="pc-h-item pc-sidebar-popup">
+      <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
+        <i class="ti ti-menu-2"></i>
+      </a>
+    </li>
+    <!-- <li class="dropdown pc-h-item d-inline-flex d-md-none">
+      <a
+        class="pc-head-link dropdown-toggle arrow-none m-0"
+        data-bs-toggle="dropdown"
+        href="#"
+        role="button"
+        aria-haspopup="false"
+        aria-expanded="false"
+      >
+        <i class="ti ti-search"></i>
+      </a>
+      <div class="dropdown-menu pc-h-dropdown drp-search">
+        <form class="px-3">
+          <div class="form-group mb-0 d-flex align-items-center">
+            <i data-feather="search"></i>
+            <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
+          </div>
+        </form>
+      </div>
+    </li>
+    <li class="pc-h-item d-none d-md-inline-flex">
+      <form class="header-search">
+        <i data-feather="search" class="icon-search"></i>
+        <input type="search" class="form-control" placeholder="Search here. . .">
+      </form>
+    </li> -->
+  </ul>
+</div>
+<!-- [Mobile Media Block end] -->
+<div class="ms-auto d-flex align-items-center gap-2">
+
+  <span class="badge bg-light-secondary border">
+    <i class="ti ti-calendar-event me-1"></i>
+    <span id="headerDate"></span>
+  </span>
+
+  <span class="badge bg-light-primary border">
+    <i class="ti ti-building-store me-1"></i>
+    RA Nail Club
+  </span>
+
+  <a href="../pages/login.html" class="btn btn-sm btn-outline-danger" id="logoutBtnHeader">
+    <i class="ti ti-power"></i>
+  </a>
+
+</div>
+ </div>
+</header>
+<!-- [ Header ] end -->
+<script>
+  (function(){
+    const el = document.getElementById("headerDate");
+    if(!el) return;
+    const d = new Date();
+    el.textContent = d.toLocaleDateString("tr-TR");
+  })();
+</script>
+<!-- [ Header ] end -->
+
+
+
+  <!-- [ Main Content ] start -->
+<div class="pc-container">
+  <div class="pc-content">
+
+    <div class="page-header">
+      <div class="page-block">
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <div class="page-header-title">
+              <h5 class="m-b-10">İşlemlerim</h5>
+            </div>
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="user.html">Panel</a></li>
+              <li class="breadcrumb-item" aria-current="page">İşlemlerim</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="row g-3 mb-3">
+  <div class="col-md-4">
+    <label class="form-label">Arama</label>
+    <input id="q" class="form-control" placeholder="Not / tutar / tarih içinde ara...">
+  </div>
+
+  <div class="col-md-2">
+    <label class="form-label">Ödeme Türü</label>
+    <select id="typeFilter" class="form-select">
+      <option value="Hepsi">Hepsi</option>
+      <option value="Kart">Kart</option>
+      <option value="Nakit">Nakit</option>
+    </select>
+  </div>
+
+  <!-- ✅ NEW: Hafta -->
+  <div class="col-md-3">
+    <label class="form-label">Hafta</label>
+    <input id="weekFilter" type="week" class="form-control">
+  </div>
+
+  <div class="col-md-2">
+    <label class="form-label">Ay</label>
+    <input id="monthFilter" type="month" class="form-control">
+  </div>
+
+  <div class="col-md-1 d-flex align-items-end">
+    <button class="btn btn-outline-primary w-100" id="btnExport" title="CSV indir">
+      <i class="ti ti-download"></i>
+    </button>
+  </div>
+</div>
+
+
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <h5 class="mb-0">Tüm İşlemler</h5>
+          <span class="text-muted" id="txCount">0 kayıt</span>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-hover table-borderless mb-0">
+            <thead>
+              <tr>
+                <th>Tarih</th>
+                <th>Tür</th>
+                <th>Yapılan İşlem</th>
+                <th>Not</th>
+                <th class="text-end">Tutar</th>
+                <th class="text-end">Komisyon</th>
+                <th class="text-end">Kazanç</th>
+                <th class="text-end">İşletme</th>
+                <th class="text-end">İşlem</th>
+              </tr>
+            </thead>
+            <tbody id="txList">
+              <tr><td colspan="9" class="text-center text-muted">Yükleniyor...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- [ Main Content ] end -->
+  <footer class="pc-footer">
+    <div class="footer-wrapper container-fluid">
+      <div class="row">
+<div class="col-sm my-1">
+  <p class="m-0">
+    © 2026 <strong>Panel Sistemi</strong> — Tüm hakları saklıdır.
+  </p>
+</div>
+
+<div class="col-sm my-1 text-sm-end">
+  <a href="https://mirayturgut.com.tr/"> <p class="m-0 text-muted">
+    Geliştirici: <strong>Miray Turgut</strong>
+  </p></a>
+</div>
+
+        <div class="col-auto my-1">
+          <ul class="list-inline footer-link mb-0">
+            <li class="list-inline-item"><a href="../index.html">Çıkış</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- [Page Specific JS] start -->
+  <script src="../assets/js/plugins/apexcharts.min.js"></script>
+  <script src="../assets/js/pages/dashboard-default.js"></script>
+  <!-- [Page Specific JS] end -->
+  <!-- Required Js -->
+  <script src="../assets/js/plugins/popper.min.js"></script>
+  <script src="../assets/js/plugins/simplebar.min.js"></script>
+  <script src="../assets/js/plugins/bootstrap.min.js"></script>
+  <script src="../assets/js/fonts/custom-font.js"></script>
+  <script src="../assets/js/pcoded.js"></script>
+  <script src="../assets/js/plugins/feather.min.js"></script>
+
+  
+  
+  
+  
+  <script>layout_change('light');</script>
+  
+  
+  
+  
+  <script>change_box_container('false');</script>
+  
+  
+  
+  <script>layout_rtl_change('false');</script>
+  
+  
+  <script>preset_change("preset-1");</script>
+  
+  
+  <script>font_change("Public-Sans");</script>
+  
+   <script src="../dashboard/shared-storage.js"></script>
+  <script src="../dashboard/auth-guard.js"></script>
+    <script src="../dashboard/user-transactions.js"></script>
+
+</body>
+<!-- [Body] end -->
+
+</html>
